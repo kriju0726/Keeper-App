@@ -14,13 +14,22 @@ function App(){
         });
     }
 
-    function deleteNote(id){
+    // function deleteNote(id){
+    //     setNotes(prevNotes => {
+    //         prevNotes.filter((noteItem, index) => {
+    //             return index !== id;
+    //         });
+    //     });
+    // }
+
+    function deleteNote(id) {
         setNotes(prevNotes => {
-            prevNotes.filter((noteItem, index) => {
+            return prevNotes.filter((noteItem, index) => {
                 return index !== id;
             });
         });
     }
+    
 
 
 
